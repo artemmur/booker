@@ -1,0 +1,27 @@
+[flake8]
+
+jobs = auto
+
+exclude =
+    .git,
+    __pycache__,
+    __pypackages__,
+    .pytest_cache,
+    .mypy_cache
+filename = *.py
+
+verbose = 0
+quiet = 0
+format = default
+count = True
+show-source = True
+statistics = True
+
+max-line-length = 120
+max-complexity = 4
+
+select =
+    E,
+    W,
+    F,
+    C
